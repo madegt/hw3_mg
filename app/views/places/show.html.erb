@@ -1,13 +1,12 @@
 <!-- Posts from place -->
 
-<h1><%= @place["name"] %></h1>
-
-<h3>Memories</h3>
+<h1><%= @place["name"] %> Memories </h1>
 
 <ul>
   <% for entry in @entries %>
     <li>
-      <%= entry["title"] %>
+      <h2> <%= entry["title"] %> </h2>
+      <h3> <%= entry["posted_on"] %> </h3>
       <%= entry["description"] %>
     </li>
   <% end %>
