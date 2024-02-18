@@ -11,11 +11,8 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
-  <p>
-    <%= form.label "place_id" %>
-    <%= form.text_field "place_id" %>
-  </p>
-  <p>
+ 
+    <%= form.hidden_field "place_id" %>
     <%= form.submit %>
   </p>
 <% end %>

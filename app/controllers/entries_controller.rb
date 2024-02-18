@@ -8,6 +8,7 @@ end
 
 def new
   @entry = Entry.new
+  @entry["place_id"] = params["place_id"]
   # render contacts/new view with new Contact form
 end
 
@@ -20,7 +21,7 @@ def create
   @entry["description"] = params["description"]
   @entry["posted_on"] = params["posted_on"]
 
-  # assign relationship between Contact and Company
+  # assign relationship between entry and place
   @entry["place_id"] = params["place_id"]
 
   # save row
