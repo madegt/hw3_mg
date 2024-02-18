@@ -1,0 +1,22 @@
+<!-- Posts from place -->
+
+<h1><%= @place["name"] %></h1>
+
+<h3>Memories</h3>
+
+<ul>
+  <% for entry in @entries %>
+    <li>
+      <%= entry["title"] %>
+      <%= entry["description"] %>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+  <a href="/entries/new">New Post</a>
+</p>
+
+<p>
+  <a href="/places">Back to All Places</a>
+</p>
